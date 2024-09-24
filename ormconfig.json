@@ -1,0 +1,18 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "198175",
+  "database": "CashFlowDB",
+  "synchronize": true,
+  "logging": false,
+  "entities": ["src/entities/**/*.js"],
+  "migrations": ["src/migration/**/*.js"],
+  "subscribers": ["src/subscriber/**/*.js"],  
+  "cli": {
+    "entitiesDir": "src/entities",
+    "migrationsDir": "src/migration",
+    "subscribersDir": "src/subscriber"
+  }
+}
